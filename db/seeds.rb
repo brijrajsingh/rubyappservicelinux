@@ -5,19 +5,26 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+g1 = Genre.create(name: 'Action')
+g2 = Genre.create(name: 'Adventure')
+g3 = Genre.create(name: 'Fantasy')
+g4 = Genre.create(name: 'Science Fiction')
+g5 = Genre.create(name: 'Drama')
+g6 = Genre.create(name: 'Thriller')
+g7 = Genre.create(name: 'Crime Movie')
 
 Movie.create(title: 'The Martian - Bring Him Home', description: 'The Martian is a 2015 American science fiction film
 directed by Ridley Scott and starring Matt Damon. The film is based on Andy Weir\'s 2011 novel The Martian, which Drew
 Goddard adapted into a screenplay. Damon stars as an astronaut who is mistakenly presumed dead and left behind on Mars.
 The film depicts his struggle to survive and others\' efforts to rescue him.', poster: '3.jpg', running_time: 144,
-director: 'Ridley Scott');
+director: 'Ridley Scott', genres: [g2, g4, g5]);
 
 Movie.create(title: 'Interstellar', description: 'Interstellar is a 2014 epic science fiction film directed by Christopher
 Nolan and starring Matthew McConaughey, Anne Hathaway, Jessica Chastain, and Michael Caine. The film features a crew of
 astronauts who travel through a wormhole in search of a new home for humanity. Brothers Christopher and Jonathan Nolan
 wrote the screenplay, which has its origins in a script Jonathan developed in 2007. Christopher Nolan produced the film
 with his wife Emma Thomas through their production company Syncopy and with Lynda Obst through Lynda Obst Productions.',
-poster: '2.jpg', running_time: 169, director: 'Christopher Nolan');
+poster: '2.jpg', running_time: 169, director: 'Christopher Nolan', genres: [g2, g4, g5]);
 
 Movie.create(title: 'The Dark Knight Rises', description: 'The Dark Knight Rises is a 2012 British-American superhero
 film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with
@@ -26,7 +33,8 @@ trilogy, and the sequel to Batman Begins (2005) and The Dark Knight (2008). Chri
 Bruce Wayne/Batman, with a returning cast of allies: Michael Caine as Alfred Pennyworth, Gary Oldman as James Gordon,
 and Morgan Freeman as Lucius Fox. The film introduces Selina Kyle (Anne Hathaway), and Bane (Tom Hardy). Eight years
 after the events of The Dark Knight, violent revolutionary Bane forces an older Bruce Wayne to resume his role as Batman
-and save Gotham City from nuclear destruction.', poster: '4.jpg', running_time: 165, director: 'Christopher Nolan');
+and save Gotham City from nuclear destruction.', poster: '4.jpg', running_time: 165, director: 'Christopher Nolan',
+genres: [g1, g5, g6, g7]);
 
 Movie.create(title: 'Star Wars -  The Force Awakens', description: 'Star Wars: The Force Awakens (also known as Star
 Wars: Episode VII – The Force Awakens) is a 2015 American epic space opera film directed, co-produced, and co-written
@@ -36,4 +44,4 @@ Daniels, Peter Mayhew, and Max von Sydow. Produced by Lucasfilm and Abrams\' Bad
 worldwide by Walt Disney Studios Motion Pictures, The Force Awakens is set 30 years after Return of the Jedi; it
 follows Rey, Finn, and Poe Dameron\'s search for Luke Skywalker and their fight alongside the Resistance, led by veterans
 of the Rebel Alliance, against Kylo Ren and the First Order, a group that is the successor to the Galactic Empire.',
-poster: '1.jpg', running_time: 136, director: 'J. J. Abrams')
+poster: '1.jpg', running_time: 136, director: 'J. J. Abrams', genres: [g1, g4])
