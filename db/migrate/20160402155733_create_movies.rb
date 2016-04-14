@@ -4,6 +4,7 @@ class CreateMovies < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.string :poster
+      t.string :wallpaper
       t.integer :running_time
       t.string :director
 

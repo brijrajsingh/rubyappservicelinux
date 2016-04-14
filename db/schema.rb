@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160408091554) do
     t.string   "title"
     t.text     "description"
     t.string   "poster"
+    t.string   "wallpaper"
     t.integer  "running_time"
     t.string   "director"
     t.datetime "created_at",   null: false
