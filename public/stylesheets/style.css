@@ -377,6 +377,9 @@ input.search-field + .input-group-label {
 }
 
 /* page: new */
+fieldset label {
+    color: white;
+}
 .label-text {
     color: white;
     font-family: 'Calibri', sans-serif;
