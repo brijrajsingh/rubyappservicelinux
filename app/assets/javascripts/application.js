@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require vendor/jquery.min
+//= require vendor/what-input.min
+//= require foundation.min
+//= require responsive-tables
 //= require_tree .
+
+$(document).foundation();
