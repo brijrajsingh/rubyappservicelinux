@@ -3,9 +3,15 @@
     <div class="large-16 column">
       <div class="menu-centered">
         <ul class="menu">
-          <li class="inactive"><a href="../index.html">home</a></li>
-          <li class="inactive"><a href="../movie/index.html">movies</a></li>
-          <li class="inactive"><a href="index.html">genres</a></li>
+          <li class="inactive">
+            <%= link_to 'HOME', root_path %>
+          </li>
+          <li class="inactive">
+            <%= link_to 'MOVIES', movies_path %>
+          </li>
+          <li class="inactive">
+            <%= link_to 'GENRES', genres_path %>
+          </li>
         </ul>
       </div>
     </div>
