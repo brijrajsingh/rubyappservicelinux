@@ -395,6 +395,9 @@ fieldset label {
 }
 
 /* page: show movie */
+.info-value a {
+    color: white;
+}
 .wallpaper-column {
     overflow: hidden;
     max-height: 500px;
