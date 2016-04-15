@@ -77,7 +77,7 @@
             <h3 class="info-key genre">Genres:</h3>
             <p class="info-value">
               <% @movie.genres.each do |genre| %>
-              <%= genre.name %>,
+              <%= link_to genre.name, genre_path(genre) %>,
               <% end %>
             </p>
           </div>
