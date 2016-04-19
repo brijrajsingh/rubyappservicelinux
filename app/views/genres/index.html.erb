@@ -32,33 +32,17 @@
             </div>
           </div>
         </div>
-    <% end %>
+  <% end %>
 
     <div class="row row-buffer"></div>
   </div>
 
   <div class="large-12 columns">
-    <table>
-      <thead>
-        <tr>
-          <th><h2>Genre</h2></th>
-          <th><h2><i class="fi-eye"></i></h2></th>
-          <th><h2><i class="fi-page-edit"></i></h2></th>
-          <th><h2><i class="fi-trash"></i></h2></th>
-        </tr>
-      </thead>
-      <tbody>
-      <% @genres.each do |genre| %>
-        <tr>
-          <td><%= genre.name %></td>
-          <td><%= link_to 'Show', genre %></td>
-          <td><%= link_to 'Edit', edit_genre_path(genre) %></td>
-          <td><%= link_to 'Destroy', genre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-      </tbody>
-    </table>
+    <canvas class="full-width" id="canvas" height="500" width="1200"></canvas>
   </div>
+
+  <div class="row row-buffer"></div>
+
 </div><!-- end container -->
 
 <div class="row row-buffer"></div>
@@ -72,3 +56,20 @@
     </ul>
   </div>
 </div>
+
+<script>
+
+  var w = $('div.row').width();
+  $('#canvas').width(w * 0.97);
+
+  var elements = [
+    <%@genres.each do |genre| %>
+      ['<%= genre.name %>', <%= 50 + Random.rand(50) %>, <%= genre.id %>],
+    <% end %>
+  ];
+  WordCloud($('#canvas')[0], { list: elements, fontWeight: 'bold', gridSize: 10, backgroundColor: 'white',
+    rotateRatio: 0.5, shuffle: true, wait: 80, click: function(item, dimension, event) {
+        window.location += '/' + item[2];
+    }
+  });
+</script>

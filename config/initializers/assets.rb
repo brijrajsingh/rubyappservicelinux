@@ -10,4 +10,4 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
-Rails.application.config.assets.precompile += %w( foundation.min.js foundation.min.css motion-ui.css responsive-tables.css fonts/foundation-icons.css )
+Rails.application.config.assets.precompile += %w( foundation.min.js wordcloud2.js foundation.min.css motion-ui.css responsive-tables.css fonts/foundation-icons.css )

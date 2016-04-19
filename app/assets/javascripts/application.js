@@ -16,6 +16,7 @@
 //= require vendor/jquery.min
 //= require vendor/what-input.min
 //= require foundation.min
+//= require wordcloud2.js
 //= require responsive-tables
 //= require_tree .
 
