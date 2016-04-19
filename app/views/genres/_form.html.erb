@@ -11,11 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="row">
+    <div class="large-6 medium-6 small-12 columns">
+      <label>
+        <h2 class="label-text">Name</h2>
+          <%= f.text_field :name %>
+      </label>
+     </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.submit 'Submit', {:class => 'button secondary large'} %>
+    </div>
   </div>
 <% end %>
+</div>
+</div><!-- end container -->
+
+<div class="row row-buffer"></div>
+
+<div class="row">
+  <div class="large-12 colums">
+    <ul class="menu">
+      <li>
+        <%= link_to 'Back', genres_path %>
+      </li>
+    </ul>
+  </div>
+</div>
