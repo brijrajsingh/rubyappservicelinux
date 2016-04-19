@@ -23,6 +23,18 @@
 <div class="row container">
   <div class="large-12 columns">
 
+    <% if !notice.nil? %>
+        <div class="row row-buffer"></div>
+
+        <div class="row">
+          <div class="large-6 medium-6 small-6 columns">
+            <div class="callout primary">
+              <%= notice %>
+            </div>
+          </div>
+        </div>
+    <% end %>
+
     <div class="row row-buffer"></div>
 
     <div class="row">
@@ -88,8 +100,6 @@
 </div>
 
 <div class="row row-buffer"></div>
-
-<p id="notice"><%= notice %></p>
 
 <script>
       $(document).foundation();

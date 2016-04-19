@@ -512,3 +512,9 @@ i.empty-star {
 textarea {
     line-height: 1.2;
 }
+
+/* callout */
+div.callout.primary {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
