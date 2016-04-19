@@ -12,6 +12,7 @@
  *
  *= require foundation.min
  *= require_self
+ *= require fonts/foundation-icons.css
  *= require motion-ui
  *= require_tree .
  */
@@ -505,4 +506,9 @@ i.empty-star {
     margin-bottom: 0.5em;
     line-height: normal;
     text-align: justify;
+}
+
+/* edit / create */
+textarea {
+    line-height: 1.2;
 }
