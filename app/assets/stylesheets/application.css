@@ -51,7 +51,7 @@ a.back, a.edit {
     border-right: solid 2px #BB331B;
 }
 
-.noselect, label, h1, h2, h3, h4, h5, h6 {
+.noselect, label, h1, h2, h3, h4, h5, h6, p, ul, li, img {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
     -khtml-user-select: none; /* Konqueror */
