@@ -36,21 +36,10 @@
     <div class="row row-buffer"></div>
 
     <div class="row">
-      <div class="large-4 medium-4 columns">
-        <div class="input-group">
-          <input class="input-group-field search-field" type="search" placeholder="Search ...">
-                        <span class="input-group-label">
-                            <i class="fi-page-search"></i>
-                        </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
       <% @movies.each do |movie| %>
           <div class="large-3 medium-4 columns end">
             <%= link_to movie do %>
-              <img src="images/<%= movie.poster %>">
+              <img class="movie-poster" src="images/<%= movie.poster %>">
             <% end %>
           </div>
     <% end %>

@@ -62,7 +62,8 @@ a.back, a.edit {
 }
 
 #bar {
-    background: linear-gradient(to right, rgba(35, 61, 99, 0.5), rgba(22, 30, 42, 0.5));
+    /*background: linear-gradient(to right, rgba(35, 61, 99, 0.5), rgba(22, 30, 42, 0.5));*/
+    background: linear-gradient(to right, rgba(17, 75, 150, 0.56), rgba(185, 0, 0, 0.4));
     box-shadow: 2px 2px 5px #060606;
     position: relative;
     z-index: 10;
@@ -508,7 +509,12 @@ i.empty-star {
     text-align: justify;
 }
 
-/* edit / create */
+/* page: movie index */
+img.movie-poster {
+    margin-bottom: 20px;
+}
+
+/* page: edit / create */
 textarea {
     line-height: 1.2;
 }

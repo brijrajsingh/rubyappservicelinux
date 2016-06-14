@@ -68,7 +68,7 @@
       <% @genre.movies.each do |movie| %>
       <div class="large-3 columns end">
         <%= link_to movie do %>
-            <img src="../images/<%= movie.poster %>">
+            <img class="movie-poster" src="../images/<%= movie.poster %>">
         <% end %>
       </div>
       <% end %>
