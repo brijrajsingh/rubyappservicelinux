@@ -14,6 +14,7 @@ g4 = Genre.create(name: 'Science Fiction', description: desc)
 g5 = Genre.create(name: 'Drama', description: desc)
 g6 = Genre.create(name: 'Thriller', description: desc)
 g7 = Genre.create(name: 'Crime Movie', description: desc)
+g8 = Genre.create(name: 'Western', description: desc)
 
 Movie.create(title: 'The Martian - Bring Him Home', description: 'The Martian is a 2015 American science fiction film directed by Ridley Scott and starring Matt Damon. The film is based on Andy Weir\'s 2011 novel The Martian, which Drew Goddard adapted into a screenplay. Damon stars as an astronaut who is mistakenly presumed dead and left behind on Mars. The film depicts his struggle to survive and others\' efforts to rescue him.', poster: '3.jpg', wallpaper: '3_wallpaper.jpg', running_time: 144, director: 'Ridley Scott', genres: [g2, g4, g5]);
 
@@ -25,3 +26,9 @@ director: 'Christopher Nolan', genres: [g1, g5, g6, g7]);
 
 Movie.create(title: 'Star Wars -  The Force Awakens', description: 'Star Wars: The Force Awakens (also known as Star Wars: Episode VII – The Force Awakens) is a 2015 American epic space opera film directed, co-produced, and co-written by J. J. Abrams. The seventh installment in the main Star Wars film series, it stars Harrison Ford, Mark Hamill, Carrie Fisher, Adam Driver, Daisy Ridley, John Boyega, Oscar Isaac, Lupita Nyong\'o, Andy Serkis, Domhnall Gleeson, Anthony Daniels, Peter Mayhew, and Max von Sydow. Produced by Lucasfilm and Abrams\' Bad Robot Productions and distributed worldwide by Walt Disney Studios Motion Pictures, The Force Awakens is set 30 years after Return of the Jedi; it follows Rey, Finn, and Poe Dameron\'s search for Luke Skywalker and their fight alongside the Resistance, led by veterans of the Rebel Alliance, against Kylo Ren and the First Order, a group that is the successor to the Galactic Empire.',
 poster: '1.jpg', wallpaper: '1_wallpaper.jpg', running_time: 136, director: 'J. J. Abrams', genres: [g1, g4])
+
+Movie.create(title: 'The Revenant', description: 'The Revenant is a 2015 American survival drama film directed, co-produced, and co-written by Alejandro G. Iñárritu. The screenplay by Iñárritu and Mark L. Smith is based in part on Michael Punke\'s novel of the same name, inspired by the experiences of frontiersman Hugh Glass in 1823, in what is now Montana and South Dakota. It stars Leonardo DiCaprio as Glass, and co-stars Tom Hardy, Domhnall Gleeson, and Will Poulter. The film follows Glass\'s quest for revenge after one of his men betrays him, kills his son, and leaves the severely wounded Glass behind.',
+poster: '5.jpg', wallpaper: '5_wallpaper.jpg', running_time: 151, director: 'Alejandro Iñárritu', genres: [g2, g5, g6, g8])
+
+Movie.create(title: 'The Junlge Book', description: 'The Jungle Book is a 2016 American fantasy adventure film, directed by Jon Favreau from a screenplay by Justin Marks, and produced by Walt Disney Pictures. Based on Rudyard Kipling\'s eponymous collective works, the film is a live-action/CGI reimagining of Walt Disney\'s 1967 animated film of the same name. The Jungle Book stars and introduces Neel Sethi as Mowgli, an orphaned human boy who, guided by his animal guardians, sets out on a journey of self-discovery while evading the threatening Shere Khan. The film features the voices of Bill Murray, Ben Kingsley, Idris Elba, Lupita Nyong\'o, Scarlett Johansson, Giancarlo Esposito and Christopher Walken.',
+ poster: '6.jpg', wallpaper: '6_wallpaper.jpg', running_time: 105, director: 'Jon Favreau', genres: [g2, g5, g3])
