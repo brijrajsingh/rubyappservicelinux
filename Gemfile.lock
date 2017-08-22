@@ -79,8 +79,6 @@ GEM
       mini_portile2 (~> 2.2.0)
     nokogiri (1.8.0-x86-mingw32)
       mini_portile2 (~> 2.2.0)
-    pg (0.21.0-x64-mingw32)
-    pg (0.21.0-x86-mingw32)
     puma (3.10.0)
     rack (1.6.8)
     rack-test (0.6.3)
@@ -164,7 +162,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  pg
   puma
   rails (= 4.2.5.2)
   sass-rails (~> 5.0)
