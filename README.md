@@ -75,11 +75,11 @@ Deploy to Azure App services for Linux
 
 Go to Azure Portal, and create an instance of Azure App Services for Linux, while creating click on "configure container" and select "Docker Hub" as Image Source.
 
-![App Service for Linux](appsvc1.jpg)
+![App Service for Linux](appsvc1.JPG)
 
 Go to App settings and set the key WEBSITES_PORT to 3000
 
-![App Service for Linux - App settings](appsvc2.jpg)
+![App Service for Linux - App settings](appsvc2.JPG)
 
 
 Now restart the App service and browse to app service end point, voila!
